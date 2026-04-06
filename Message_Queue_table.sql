@@ -4,12 +4,12 @@ CREATE TABLE dbo.Message_Queue (
     msg_type INT,
 
     -- original data (prefixed MQ)
-    MQ_oh_telephone NVARCHAR(50),
-    MQ_oh_total_amt DECIMAL(18,2),
-    MQ_installment_value DECIMAL(18,2),
-    MQ_penalty_value DECIMAL(18,2),
-    MQ_order_no NVARCHAR(50),
-    MQ_order_name NVARCHAR(100),
+    mq_oh_telephone NVARCHAR(50),
+    mq_oh_total_amt DECIMAL(18,2),
+    mq_installment_value DECIMAL(18,2),
+    mq_penalty_value DECIMAL(18,2),
+    mq_order_no NVARCHAR(50),
+    mq_order_name NVARCHAR(100),
 
     -- system columns
     created_at DATETIME DEFAULT GETDATE(),
